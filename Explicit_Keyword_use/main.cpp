@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class Complex
+class Complexs
 {
 private:
     double real;
@@ -10,13 +10,13 @@ private:
 
 public:
     // Default constructor
-    explicit Complex(double r = 0.0, double i = 0.0) : real(r), imag(i)
+    explicit Complexs(double r = 0.0, double i = 0.0) : real(r), imag(i)
     {
 
     }
 
     // A method to compare two Complex numbers
-    bool operator == (Complex rhs)
+    bool operator == (Complexs rhs)
     {
        return (real == rhs.real && imag == rhs.imag)? true : false;
     }
@@ -25,7 +25,7 @@ public:
 int main()
 {
     // a Complex object
-    Complex com1(3.0, 0.0);
+    Complexs com1(3.0, 0.0);
 
     if (com1 == 3.0)
        cout << "Same"<<endl;
