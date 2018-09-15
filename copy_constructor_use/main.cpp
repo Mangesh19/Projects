@@ -7,10 +7,10 @@ class Demo
 public:
     Demo(const char* stringvar= nullptr)
     {
-        name = stringvar;
+        names = stringvar;
     }
 private:
- string name;
+ string names;
 };
 
 int main(int argc, char *argv[])
